@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kamila Writing Portfolio</title>
+<title>Kamila's Portfolio</title>
 <style>
 /* General Reset */
 body, html {
@@ -147,7 +147,7 @@ body, html {
 <!-- Highlighted Project Section -->
 <section class="highlighted-project">
   <div class="overlay">
-    <h1>Kamila's Writing Portfolio</h1>
+    <h1>Kamila's Portfolio</h1>
     <p class="subheading">Highlighted Project</p>
     <a href="https://drive.google.com/file/d/19qQAnyTnOmwLmeKaqt5EtBMV5tV74i2S/view?usp=drive_link" target="_blank" class="preview-btn">Click Here for a Preview</a>
   </div>
@@ -160,15 +160,15 @@ body, html {
     <div class="raven-wrapper">
       <img src="https://p1.hiclipart.com/preview/110/788/956/cartoon-bird-american-crow-raven-drawing-rook-vulture-beak-crowlike-bird-png-clipart.jpg" alt="Raven" class="raven-img">
     </div>
-    <h2>About the Author</h2>
+    <h2>About the Writer</h2>
     <p>
-      Kamila is an ambitious author in her twenties, heavily inspired by European literature. Her writing is dense and reflective, bringing nuance to her narratives while breathing life into both her characters and the worlds she creates.
+      Kamila is an ambitious writer in her twenties, heavily inspired by European literature. Her writing is dense and reflective, bringing nuance to her narratives while breathing life into both her characters and the worlds she creates.
     </p>
     <p>
-      While still at an amateur stage of writing, Kamila strives to craft novels that would linger in people's minds and immerse everyone in a rich emotional landscape woven only with her words, just like her favorite classical authors. It's her wish as she wrote her very first novel <em>"Sterne und Sterben" (Stars and To Die)</em>, which was born out of her passion for military history (particularly WWI-WWII eras).
+      While still at an amateur stage of writing, Kamila strives to craft novels that would linger in people's minds and immerse everyone in a rich emotional landscape woven with her words. An example of this is her very first novel <em>"Sterne und Sterben" (Stars and To Die)</em> which was born out of her passion for military history (particularly WWI and WWII eras).
     </p>
     <p>
-      Beyond her writing, she's at the stage where she prioritizes chasing different intellectual pursuits and self-discovery. She is hoping that one day—with her passions and interests combined—she could make a small difference in the world, even if only through her written words.
+      Beyond her writing, she's at the stage where she prioritizes chasing different intellectual pursuits and self-discovery. She is hoping that one day—with her passions and interests combined—she could make a small difference in the world even if only through her written words.
     </p>
   </div>
 </section>
@@ -183,7 +183,7 @@ scene.background = new THREE.Color(0x000000);
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
 camera.position.z = 10;
 
-const renderer = new THREE.WebGLRenderer({antialias:true});
+const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 container.appendChild(renderer.domElement);
 
@@ -231,7 +231,7 @@ function createRaven(){
   group.position.z = (Math.random()-0.5)*5;
 
   group.userData = { 
-    wingLeft, wingRight, flapPhase: Math.random()*Math.PI*2, clicked:false,
+    wingLeft, wingRight, flapPhase: Math.random()*Math.PI*2,
     vx: (Math.random()*0.06 + 0.03)*(Math.random()>0.5?1:-1),
     vy: (Math.random()*0.03 + 0.015)*(Math.random()>0.5?1:-1)
   };
